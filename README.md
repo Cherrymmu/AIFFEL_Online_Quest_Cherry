@@ -8,6 +8,7 @@
 🔑 **PRT(Peer Review Template)**
 
 - ![스크린샷 2023-11-07 오후 12 20 05](https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/2ff3f2f1-9228-4d19-a1d8-c970952f09d9)
+
   **1. 주어진 문제를 해결하는 완성된 코드가 제출되었나요?**
     - 문제에서 요구하는 최종 결과물이 첨부되었는지 확인
     - 문제를 해결하는 완성된 코드란 프로젝트 루브릭 3개 중 2개, 
