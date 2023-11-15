@@ -1,6 +1,6 @@
 # AIFFEL Campus Online Code Peer Review Templete
 - 코더 : 홍채림, 이선재
-- 리뷰어 :
+- 리뷰어 : 김민기
 
  
 
