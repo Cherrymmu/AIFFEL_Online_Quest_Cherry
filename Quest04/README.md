@@ -11,6 +11,7 @@
     - 문제를 해결하는 완성된 코드란 프로젝트 루브릭 3개 중 2개, 
     퀘스트 문제 요구조건 등을 지칭
         - 해당 조건을 만족하는 코드를 캡쳐해 근거로 첨부
+ 
 ![image](https://github.com/NeatyNut/AIFFEL_Online_Quest_Cherry/assets/89675001/cf353085-0d7b-4f6b-907e-601fb76da402)
 
     
