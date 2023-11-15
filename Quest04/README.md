@@ -29,7 +29,7 @@
     실험이 기록되어 있는지 확인
         - 잘 작성되었다고 생각되는 부분을 캡쳐해 근거로 첨부합니다.
 
-*2, *3
+# 2번 3번
 
 ![image](https://github.com/NeatyNut/AIFFEL_Online_Quest_Cherry/assets/89675001/8e3d9cfb-9a59-41ba-8974-6381c4c4db8a)
 
@@ -39,6 +39,7 @@
     배운점과 아쉬운점, 느낀점 등이 기록되어 있는지 확인
     - 전체 코드 실행 플로우를 그래프로 그려서 이해를 돕고 있는지 확인
         - 잘 작성되었다고 생각되는 부분을 캡쳐해 근거로 첨부합니다.
+
 ![image](https://github.com/NeatyNut/AIFFEL_Online_Quest_Cherry/assets/89675001/783692c4-d907-46e9-ad5c-9f2df85dcbe7)
 
         
