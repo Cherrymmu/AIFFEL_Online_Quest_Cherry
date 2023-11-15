@@ -29,7 +29,7 @@
     실험이 기록되어 있는지 확인
         - 잘 작성되었다고 생각되는 부분을 캡쳐해 근거로 첨부합니다.
 
-**2, **3
+*2, *3
 
 ![image](https://github.com/NeatyNut/AIFFEL_Online_Quest_Cherry/assets/89675001/8e3d9cfb-9a59-41ba-8974-6381c4c4db8a)
 
