@@ -128,6 +128,7 @@ def sentence_generation(sentence):
 
   return predicted_sentence
 ```
+
 <img width="986" alt="스크린샷 2024-01-25 오후 5 28 37" src="https://github.com/thetjswo/AIFFEL_Online_Quest_Cherry_hcl/assets/74177040/77664aef-de5b-4ed1-81d8-f71b22e53319">
 [리뷰] 질문자가 상처를 받을 것 같은 말을 골라서 하는 성격의 챗봇인 것 같다...  
 
@@ -194,6 +195,7 @@ def sentence_generation(sentence):
             name='decoder_layer_{}'.format(i),
         )(inputs=[outputs, enc_outputs, look_ahead_mask, padding_mask])
 ```
+
 [리뷰] 여러 번 반복해야하는 코드를 반복문을 사용하여 깔끔하게 정리하였다.  
 
 ---
