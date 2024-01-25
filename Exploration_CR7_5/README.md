@@ -30,7 +30,9 @@ def preprocess_sentence(sentence):
 
     sentence = sentence.strip()
     return sentence
+```
 
+```
 # 테스트
 print(preprocess_sentence("안녕하세요? 저는 챗봇입니다!!"))
 
