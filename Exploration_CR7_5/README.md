@@ -13,120 +13,119 @@
 * 루브릭 1
 <img width="887" alt="스크린샷 2024-01-25 오후 5 25 55" src="https://github.com/thetjswo/AIFFEL_Online_Quest_Cherry_hcl/assets/74177040/37896b3a-b6a3-4eec-af5e-138771aefc6d">
 ```
-import re
-
-def preprocess_sentence(sentence):
-    # 입력받은 문장을 소문자로 변경하고 양쪽 공백을 제거
-    sentence = sentence.lower().strip()
-
-    # 한글, 문장부호를 제외한 모든 문자를 공백으로 대체
-    sentence = re.sub(r"[^가-힣?.!,ㅠㅎㅋ]+", " ", sentence)
-
-    # 문장부호 앞뒤에 공백 추가
-    sentence = re.sub(r"([?.!,])", r" \1 ", sentence)
-
-    # 연속된 공백은 하나의 공백으로
-    sentence = re.sub(r'[" "]+', " ", sentence)
-
-    sentence = sentence.strip()
-    return sentence
-
-# 테스트
-print(preprocess_sentence("안녕하세요? 저는 챗봇입니다!!"))
-
-import pandas as pd
-
-def load_conversations():
-    # 데이터셋 로드
-    df = pd.read_csv(file_path)
+    import re
     
-    # 질문과 답변 쌍
-    questions, answers = [], []
-    for i in range(len(df)):
-        # 전처리 함수를 적용
-        questions.append(preprocess_sentence(df['Q'][i]))
-        answers.append(preprocess_sentence(df['A'][i]))
+    def preprocess_sentence(sentence):
+        # 입력받은 문장을 소문자로 변경하고 양쪽 공백을 제거
+        sentence = sentence.lower().strip()
+    
+        # 한글, 문장부호를 제외한 모든 문자를 공백으로 대체
+        sentence = re.sub(r"[^가-힣?.!,ㅠㅎㅋ]+", " ", sentence)
+    
+        # 문장부호 앞뒤에 공백 추가
+        sentence = re.sub(r"([?.!,])", r" \1 ", sentence)
+    
+        # 연속된 공백은 하나의 공백으로
+        sentence = re.sub(r'[" "]+', " ", sentence)
+    
+        sentence = sentence.strip()
+        return sentence
+    
+    # 테스트
+    print(preprocess_sentence("안녕하세요? 저는 챗봇입니다!!"))
+    
+    import pandas as pd
+    
+    def load_conversations():
+        # 데이터셋 로드
+        df = pd.read_csv(file_path)
+        
+        # 질문과 답변 쌍
+        questions, answers = [], []
+        for i in range(len(df)):
+            # 전처리 함수를 적용
+            questions.append(preprocess_sentence(df['Q'][i]))
+            answers.append(preprocess_sentence(df['A'][i]))
+    
+            if len(questions) >= MAX_SAMPLES:
+                break
+        return questions, answers
+    
+    # 데이터를 로드하고 전처리하여 질문을 questions, 답변을 answers에 저장합니다.
+    
+    questions, answers = load_conversations()
+    
+    print('전체 샘플 수 :', len(questions))
+    
+    print('전체 샘플 수 :', len(answers))
 
-        if len(questions) >= MAX_SAMPLES:
-            break
-    return questions, answers
-
-# 데이터를 로드하고 전처리하여 질문을 questions, 답변을 answers에 저장합니다.
-
-questions, answers = load_conversations()
-
-print('전체 샘플 수 :', len(questions))
-
-print('전체 샘플 수 :', len(answers))
-```
-```
-# 5번째 샘플 출력으로 확인
-print(questions[5])
-print(answers[5])
+    # 5번째 샘플 출력으로 확인
+    print(questions[5])
+    print(answers[5])
 ```
 
 [리뷰] 전처리 과정이 이해하기 쉽게 작성이 되었다.  
 
 * 루브릭 2
 ```
-Epoch 1/20
-185/185 [==============================] - 21s 74ms/step - loss: 1.0460 - accuracy: 0.0171
-Epoch 2/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.8508 - accuracy: 0.0354
-Epoch 3/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.7244 - accuracy: 0.0365
-Epoch 4/20
-185/185 [==============================] - 14s 73ms/step - loss: 0.6689 - accuracy: 0.0391
-Epoch 5/20
-185/185 [==============================] - 14s 73ms/step - loss: 0.6271 - accuracy: 0.0416
-Epoch 6/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.5838 - accuracy: 0.0447
-Epoch 7/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.5358 - accuracy: 0.0491
-Epoch 8/20
-185/185 [==============================] - 14s 73ms/step - loss: 0.4832 - accuracy: 0.0549
-Epoch 9/20
-185/185 [==============================] - 14s 73ms/step - loss: 0.4269 - accuracy: 0.0608
-Epoch 10/20
-185/185 [==============================] - 14s 73ms/step - loss: 0.3673 - accuracy: 0.0677
-Epoch 11/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.3071 - accuracy: 0.0751
-Epoch 12/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.2496 - accuracy: 0.0829
-Epoch 13/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.1958 - accuracy: 0.0907
-Epoch 14/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.1494 - accuracy: 0.0977
-Epoch 15/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.1097 - accuracy: 0.1046
-Epoch 16/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.0797 - accuracy: 0.1103
-Epoch 17/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.0572 - accuracy: 0.1146
-Epoch 18/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.0450 - accuracy: 0.1166
-Epoch 19/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.0374 - accuracy: 0.1179
-Epoch 20/20
-185/185 [==============================] - 14s 74ms/step - loss: 0.0323 - accuracy: 0.1188
+    Epoch 1/20
+    185/185 [==============================] - 21s 74ms/step - loss: 1.0460 - accuracy: 0.0171
+    Epoch 2/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.8508 - accuracy: 0.0354
+    Epoch 3/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.7244 - accuracy: 0.0365
+    Epoch 4/20
+    185/185 [==============================] - 14s 73ms/step - loss: 0.6689 - accuracy: 0.0391
+    Epoch 5/20
+    185/185 [==============================] - 14s 73ms/step - loss: 0.6271 - accuracy: 0.0416
+    Epoch 6/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.5838 - accuracy: 0.0447
+    Epoch 7/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.5358 - accuracy: 0.0491
+    Epoch 8/20
+    185/185 [==============================] - 14s 73ms/step - loss: 0.4832 - accuracy: 0.0549
+    Epoch 9/20
+    185/185 [==============================] - 14s 73ms/step - loss: 0.4269 - accuracy: 0.0608
+    Epoch 10/20
+    185/185 [==============================] - 14s 73ms/step - loss: 0.3673 - accuracy: 0.0677
+    Epoch 11/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.3071 - accuracy: 0.0751
+    Epoch 12/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.2496 - accuracy: 0.0829
+    Epoch 13/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.1958 - accuracy: 0.0907
+    Epoch 14/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.1494 - accuracy: 0.0977
+    Epoch 15/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.1097 - accuracy: 0.1046
+    Epoch 16/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.0797 - accuracy: 0.1103
+    Epoch 17/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.0572 - accuracy: 0.1146
+    Epoch 18/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.0450 - accuracy: 0.1166
+    Epoch 19/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.0374 - accuracy: 0.1179
+    Epoch 20/20
+    185/185 [==============================] - 14s 74ms/step - loss: 0.0323 - accuracy: 0.1188
 ```
 [리뷰] accuracy가 점진적으로 상승하고, loss가 일정하게 하강하는 형태를 확인할 수 있었다.  
 
 
 * 루브릭 3
 ```
-def sentence_generation(sentence):
-  # 입력 문장에 대해서 디코더를 동작 시켜 예측된 정수 시퀀스를 리턴받습니다.
-  prediction = decoder_inference(sentence)
-
-  # 정수 시퀀스를 다시 텍스트 시퀀스로 변환합니다.
-  predicted_sentence = tokenizer.decode(
-      [i for i in prediction if i < tokenizer.vocab_size])
-
-  print('입력 : {}'.format(sentence))
-  print('출력 : {}'.format(predicted_sentence))
-
-  return predicted_sentence
+    def sentence_generation(sentence):
+      # 입력 문장에 대해서 디코더를 동작 시켜 예측된 정수 시퀀스를 리턴받습니다.
+      prediction = decoder_inference(sentence)
+    
+      # 정수 시퀀스를 다시 텍스트 시퀀스로 변환합니다.
+      predicted_sentence = tokenizer.decode(
+          [i for i in prediction if i < tokenizer.vocab_size])
+    
+      print('입력 : {}'.format(sentence))
+      print('출력 : {}'.format(predicted_sentence))
+    
+      return predicted_sentence
 ```
 
 <img width="986" alt="스크린샷 2024-01-25 오후 5 28 37" src="https://github.com/thetjswo/AIFFEL_Online_Quest_Cherry_hcl/assets/74177040/77664aef-de5b-4ed1-81d8-f71b22e53319">
@@ -175,25 +174,25 @@ def sentence_generation(sentence):
     - 코드 중복을 최소화하고 범용적으로 사용할 수 있도록 모듈화(함수화) 했는지
         - 잘 작성되었다고 생각되는 부분을 근거로 첨부합니다.
 ```
- # num_layers만큼 쌓아올린 인코더의 층.
-  for i in range(num_layers):
-    outputs = encoder_layer(
-        units=units,
-        d_model=d_model,
-        num_heads=num_heads,
-        dropout=dropout,
-        name="encoder_layer_{}".format(i),
-    )([outputs, padding_mask])
-
-# 디코더 레이어를 num_layers만큼 쌓습니다.
-    for i in range(num_layers):
-        outputs = decoder_layer(
+     # num_layers만큼 쌓아올린 인코더의 층.
+      for i in range(num_layers):
+        outputs = encoder_layer(
             units=units,
             d_model=d_model,
             num_heads=num_heads,
             dropout=dropout,
-            name='decoder_layer_{}'.format(i),
-        )(inputs=[outputs, enc_outputs, look_ahead_mask, padding_mask])
+            name="encoder_layer_{}".format(i),
+        )([outputs, padding_mask])
+    
+    # 디코더 레이어를 num_layers만큼 쌓습니다.
+        for i in range(num_layers):
+            outputs = decoder_layer(
+                units=units,
+                d_model=d_model,
+                num_heads=num_heads,
+                dropout=dropout,
+                name='decoder_layer_{}'.format(i),
+            )(inputs=[outputs, enc_outputs, look_ahead_mask, padding_mask])
 ```
 
 [리뷰] 여러 번 반복해야하는 코드를 반복문을 사용하여 깔끔하게 정리하였다.  
