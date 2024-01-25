@@ -162,15 +162,39 @@ def sentence_generation(sentence):
         인풋이 들어가 최종적으로 아웃풋이 나오기까지의 전체 흐름을 도식화하여 
         모델 아키텍쳐에 대한 이해를 돕고 있는지 확인
 
+<img width="894" alt="스크린샷 2024-01-25 오후 5 50 30" src="https://github.com/thetjswo/AIFFEL_Online_Quest_Cherry_hcl/assets/74177040/6a6b8d33-657c-4bed-85a4-9525d0619dd3">
+[리뷰] 개선 전후에 대한 비교와 심경이 잘 작성되었다.
 
-            
+---
         
-- [ ]  **5. 코드가 간결하고 효율적인가요?**
+- [X]  **5. 코드가 간결하고 효율적인가요?**
     - 파이썬 스타일 가이드 (PEP8) 를 준수하였는지 확인
     - 코드 중복을 최소화하고 범용적으로 사용할 수 있도록 모듈화(함수화) 했는지
         - 잘 작성되었다고 생각되는 부분을 근거로 첨부합니다.
+```
+ # num_layers만큼 쌓아올린 인코더의 층.
+  for i in range(num_layers):
+    outputs = encoder_layer(
+        units=units,
+        d_model=d_model,
+        num_heads=num_heads,
+        dropout=dropout,
+        name="encoder_layer_{}".format(i),
+    )([outputs, padding_mask])
+
+# 디코더 레이어를 num_layers만큼 쌓습니다.
+    for i in range(num_layers):
+        outputs = decoder_layer(
+            units=units,
+            d_model=d_model,
+            num_heads=num_heads,
+            dropout=dropout,
+            name='decoder_layer_{}'.format(i),
+        )(inputs=[outputs, enc_outputs, look_ahead_mask, padding_mask])
+```
+[리뷰] 여러 번 반복해야하는 코드를 반복문을 사용하여 깔끔하게 정리하였다.  
 
 ---
 
-리뷰:
+리뷰: 각 함수에 대한 설명이 자세하게 기록되어 있고, 개선 전후의 비교를 통해 개선된 사항을 알 수 있었다.
 
