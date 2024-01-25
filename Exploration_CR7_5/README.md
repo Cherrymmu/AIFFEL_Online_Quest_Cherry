@@ -30,9 +30,7 @@ def preprocess_sentence(sentence):
 
     sentence = sentence.strip()
     return sentence
-```
 
-```
 # 테스트
 print(preprocess_sentence("안녕하세요? 저는 챗봇입니다!!"))
 
@@ -66,6 +64,7 @@ print('전체 샘플 수 :', len(answers))
 print(questions[5])
 print(answers[5])
 ```
+
 [리뷰] 전처리 과정이 이해하기 쉽게 작성이 되었다.  
 
 * 루브릭 2
@@ -112,6 +111,7 @@ Epoch 20/20
 185/185 [==============================] - 14s 74ms/step - loss: 0.0323 - accuracy: 0.1188
 ```
 [리뷰] accuracy가 점진적으로 상승하고, loss가 일정하게 하강하는 형태를 확인할 수 있었다.  
+
 
 * 루브릭 3
 ```
