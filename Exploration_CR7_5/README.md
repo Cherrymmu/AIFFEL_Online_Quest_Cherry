@@ -60,8 +60,8 @@ questions, answers = load_conversations()
 print('전체 샘플 수 :', len(questions))
 
 print('전체 샘플 수 :', len(answers))
-
-
+```
+```
 # 5번째 샘플 출력으로 확인
 print(questions[5])
 print(answers[5])
