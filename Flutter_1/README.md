@@ -36,16 +36,12 @@
     - 코드 중복을 최소화하고 범용적으로 사용할 수 있도록 함수화했는지
         - 잘 작성되었다고 생각되는 부분을 캡쳐해 근거로 첨부합니다.
 
-
-# 참고 링크 및 코드 개선
-```
-
 <img width="433" alt="스크린샷 2024-02-01 오후 5 30 24" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/b3b9ea32-55fa-42c8-958f-909a1474d4b1">
 <img width="386" alt="스크린샷 2024-02-01 오후 5 30 47" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/5b73565b-6e87-4fae-92b1-58bc71dce799">
 <img width="531" alt="스크린샷 2024-02-01 오후 5 31 01" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/4cd8f04d-d6d3-472d-956d-17572c123cfc">
 
-
-
+# 참고 링크 및 코드 개선
+```
 # 코드 리뷰 시 참고한 링크가 있다면 링크와 간략한 설명을 첨부합니다.
 # 코드 리뷰를 통해 개선한 코드가 있다면 코드와 간략한 설명을 첨부합니다.
 ```
