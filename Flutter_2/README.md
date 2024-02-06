@@ -37,6 +37,8 @@
         - 잘 작성되었다고 생각되는 부분을 캡쳐해 근거로 첨부합니다.
 
 <img width="273" alt="스크린샷 2024-02-06 오후 4 15 31" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/567d1c04-6a22-4062-a08d-6a89f325c59e">
+<img width="777" alt="스크린샷 2024-02-06 오후 4 58 28" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/6dd06b65-7cd0-48e4-8c05-66ca03e1b080">
+
 
 # 참고 링크 및 코드 개선
 ```
