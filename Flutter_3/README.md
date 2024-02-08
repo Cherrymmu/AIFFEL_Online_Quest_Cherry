@@ -8,6 +8,10 @@
 <img width="1440" alt="스크린샷 2024-02-08 오후 5 27 24" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/f97ee88a-aae6-4a7b-a27a-af637a70cce1">
 
 
+https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/6e2e91b2-c2fe-4251-af22-940a89d020f4
+
+
+
 # PRT(Peer Review Template)
 - [x]  **1. 주어진 문제를 해결하는 완성된 코드가 제출되었나요?**
     - 문제에서 요구하는 최종 결과물이 첨부되었는지 확인
