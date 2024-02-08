@@ -1,6 +1,11 @@
 # AIFFEL Campus Online Code Peer Review Templete
-- 코더 : 코더의 이름을 작성하세요.
-- 리뷰어 : 리뷰어의 이름을 작성하세요.
+- 코더 : 김양희, 홍채림
+- 리뷰어 : 이슬
+
+<img width="1430" alt="스크린샷 2024-02-08 오후 5 27 00" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/988cf570-bcf4-4ba2-a3c8-37066070a8ab">
+<img width="1440" alt="스크린샷 2024-02-08 오후 5 27 15" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/1c45e7d0-3641-465a-8394-f9c2defc07e1">
+<img width="1440" alt="스크린샷 2024-02-08 오후 5 27 05" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/4b03f418-4962-4567-8ce9-c298df5cfe66">
+<img width="1440" alt="스크린샷 2024-02-08 오후 5 27 24" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/f97ee88a-aae6-4a7b-a27a-af637a70cce1">
 
 
 # PRT(Peer Review Template)
