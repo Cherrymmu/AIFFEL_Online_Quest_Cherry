@@ -13,11 +13,13 @@
 
 
 https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/28eea6f4-d8ff-4417-83ec-84470dac9993
+
 -> 이부분에 연결하는데에 코드가 문제가 생겼다. 사실 점수는 나왔는데.. 그부분이 아쉬웠다. 시간이 생기면 저 부분을 수정해야겠다. 
 
 
 
 https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/a22266c9-e215-4d8d-8a31-623434b71f47
+
 -> 화면이 전환되지 않고 컨테이너 박스가 없어서 화면에 결과가 나오지 않았다. 
 
 
