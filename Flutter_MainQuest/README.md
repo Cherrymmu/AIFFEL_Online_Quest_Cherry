@@ -8,10 +8,13 @@
 <img width="895" alt="스크린샷 2024-02-16 오전 10 18 01" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/3677a26b-cf74-48cc-989e-02a101350180">
 
 ## 구현
+<img width="1390" alt="정확도 86" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/817ad809-bc84-4501-bc48-08fff623a87d">
 
 
+https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/6b739cbf-7d81-4042-91bb-34feb26167d4
 
 
+-> 이부분에 연결하는데에 코드가 문제가 생겼다. 사실 점수는 나왔는데.. 그부분이 아쉬웠다. 
 
 # AIFFEL Campus Online Code Peer Review Templete
 - 코더 : 코더의 이름을 작성하세요.
