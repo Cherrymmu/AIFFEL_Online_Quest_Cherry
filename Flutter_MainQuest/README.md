@@ -11,10 +11,13 @@
 <img width="1390" alt="정확도 86" src="https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/817ad809-bc84-4501-bc48-08fff623a87d">
 
 
-https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/6b739cbf-7d81-4042-91bb-34feb26167d4
+
+https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/28eea6f4-d8ff-4417-83ec-84470dac9993
 
 
--> 이부분에 연결하는데에 코드가 문제가 생겼다. 사실 점수는 나왔는데.. 그부분이 아쉬웠다. 
+
+
+-> 이부분에 연결하는데에 코드가 문제가 생겼다. 사실 점수는 나왔는데.. 그부분이 아쉬웠다. 시간이 생기면 저 부분을 수정해야겠다. 
 
 # AIFFEL Campus Online Code Peer Review Templete
 - 코더 : 코더의 이름을 작성하세요.
