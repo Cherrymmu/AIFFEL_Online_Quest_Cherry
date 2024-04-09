@@ -288,6 +288,19 @@ weighted avg       0.92      0.92      0.92      2507
 - 클래스를 다시 10개로 늘리되, 학습을 위한 품질이 좋은 피부병 이미지를 구성해 모델 학습 실시
 - 클래스 구성
 
+|라벨|클래스|출처|데이터 주소|
+|---|---|---|---|
+|0|여드름(8:1:1로 분리)|Dermnet|[https://www.kaggle.com/datasets/nayanchaure/acne-dataset](https://www.kaggle.com/datasets/nayanchaure/acne-dataset)|
+|1|아토피 피부염(8:1:1로 분리)|Dermnet|[https://www.kaggle.com/datasets/josettefekison/traindataskin2](https://www.kaggle.com/datasets/josettefekison/traindataskin2)|
+|2|기저세포암 (BCC)|ISIC|[https://www.kaggle.com/datasets/noureldeenhossam/33k-skin-disease-data-set](https://www.kaggle.com/datasets/noureldeenhossam/33k-skin-disease-data-set)|
+|3|양성 각화 유사 병변 (BKL)|ISIC|[https://www.kaggle.com/datasets/noureldeenhossam/33k-skin-disease-data-set](https://www.kaggle.com/datasets/noureldeenhossam/33k-skin-disease-data-set)|
+|4|습진|ISIC|[https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400](https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400)|
+|5|흑색종(Melona)|ISIC|[https://www.kaggle.com/datasets/noureldeenhossam/33k-skin-disease-data-set](https://www.kaggle.com/datasets/noureldeenhossam/33k-skin-disease-data-set)|
+|6|건선, 회반증 및 관련 질환 사진|Dermnet|[https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400](https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400)|
+|7|지루성 각화 및 기타 양성 종양|Dermnet|[https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400](https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400)|
+|8|백선사상균, 칸디다증 및 기타 곰팡이 감염|Dermnet|[https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400](https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400)|
+|9|사마귀, 멜러스컴 및 기타 바이러스 감염|Dermnet|[https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400](https://www.kaggle.com/datasets/durgeshpal/my-dataset-modified-1400)|
+
 ```
 0 : Acne
 여드름
