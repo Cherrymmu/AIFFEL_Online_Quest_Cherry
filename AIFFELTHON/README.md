@@ -20,7 +20,7 @@
 - **데이터베이스**  
 	- Firebase - Firestore
 
-![](https://i.imgur.com/nzhMfEf.jpeg)
+![](https://i.imgur.com/K6rW1er.jpeg)
 
 ---
 # 01 EDA, model parameter tuning
