@@ -11,11 +11,10 @@
 	- window, mac OS  
   
 - **프로그래밍 언어**  
-	- python, flutter  
+	- Python, Dart
   
 - **프레임워크**  
-	- GCP Serverless function - Cloud Function  
-	- FlaskAPI  
+	- Flutter 
   
 - **데이터베이스**  
 	- Firebase - Firestore
