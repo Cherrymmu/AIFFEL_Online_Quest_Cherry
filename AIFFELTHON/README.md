@@ -119,7 +119,7 @@ sweep_config = {
 
 ![](https://i.imgur.com/N5SMs4T.png)
 
-![](https://i.imgur.com/82hmiTa.png)
+![](https://i.imgur.com/7VI6BcE.png)
 
 ![](https://i.imgur.com/JrzHynF.png)
 
@@ -377,6 +377,6 @@ weighted avg       0.86      0.86      0.86      2657
 
 - 클래스별 피부명 이미지 테스트 향상 결과
 
-![](https://i.imgur.com/En2Ijf8.png)
+![](https://i.imgur.com/B2jnBJA.png)
 
-![](https://i.imgur.com/50ydMOb.png)
+![](https://i.imgur.com/TpPfysR.png)
