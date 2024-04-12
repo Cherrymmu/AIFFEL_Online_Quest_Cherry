@@ -53,7 +53,7 @@ class ProfileData with ChangeNotifier {
 }
 
 void main() async {
-  AuthRepository.initialize(appKey: '4bff35617b2f0f1652b372c19e991a1a');
+  AuthRepository.initialize(appKey: '발급한 API 키 입력');
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
