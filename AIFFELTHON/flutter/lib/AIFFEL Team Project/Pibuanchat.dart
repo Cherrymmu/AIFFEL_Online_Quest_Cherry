@@ -41,7 +41,7 @@ class _ChatScreenState extends State<ChatScreen> {
       SafetySetting(HarmCategory.dangerousContent, HarmBlockThreshold.high),
     ];
     model = GenerativeModel(
-      apiKey: "AIzaSyALljEQDosz0crm1Lu8w2TaUfy1AiFpIgU", // 실제 API 키로 교체하세요.
+      apiKey: "발급한 API 키 입력", // 실제 API 키로 교체하세요.
       model: "gemini-pro",
       generationConfig: GenerationConfig(
         temperature: 0.6,
