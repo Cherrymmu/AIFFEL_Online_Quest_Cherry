@@ -20,7 +20,8 @@
 	- Firebase - Firestore
  
 ![](https://i.imgur.com/FprM2i6.jpeg)
-![08B4FA66-A7E1-4DBC-A6B6-A4C0AB650586_1_201_a](https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/420ab1bc-a19b-4964-baa3-737ccaa9a460)
+
+https://github.com/Cherrymmu/AIFFEL_Online_Quest_Cherry/assets/149548944/2cd2468b-9bee-48f7-9097-d3bde67c7b30
 
 ---
 # 01 EDA, model parameter tuning
